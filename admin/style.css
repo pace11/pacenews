@@ -1,3 +1,4 @@
+/* code by muh iriansyah putra pratama */
 #header{
   background-color: #2A80B9;
   border-radius: 15px 15px 0px 0px;
@@ -5,12 +6,12 @@
   margin: auto;
   padding: 10px;
 }
-
+/* code by muh iriansyah putra pratama */
 #header h1{
   color: white;
   text-align: center;
 }
-
+/* code by muh iriansyah putra pratama */
 #menu{
   background-color: white;
   width: 69.5%;
@@ -19,22 +20,21 @@
   overflow: hidden;
   border: 3px solid #2A80B9;
 }
-
+/* code by muh iriansyah putra pratama */
 .link {
   color: #2A80B9;
   text-decoration: none;
   margin-right: 10px;
   padding: 5px;
   border-bottom: 3px solid #2A80B9;
-
+/* code by muh iriansyah putra pratama */
 }
  .link:hover {
   color: #FFFFFF;
   background: #2A80B9;
   border-radius: 5px 5px 0px 0px;
-
 }
-
+/* code by muh iriansyah putra pratama */
 #menu .menu-kiri{
   float: left;
   width: 70%;
@@ -45,7 +45,7 @@
   text-align: right;
   padding: 5px;
 }
-
+/* code by muh iriansyah putra pratama */
 .tombol-biru{
   background:#2C97DF;
   color:white;
@@ -68,7 +68,7 @@
   font-family:sans-serif;
   font-size:11pt;
 }
-
+/* code by muh iriansyah putra pratama */
 .tombol-merah{
   background:#ef4162;
   color:white;
@@ -91,7 +91,7 @@
   font-family:sans-serif;
   font-size:11pt;
 }
-
+/* code by muh iriansyah putra pratama */
 #article{
   background-color: #f8f8f8;
   width: 69.9%;
@@ -99,7 +99,7 @@
   padding: 10px;
   overflow: hidden;
 }
-
+/* code by muh iriansyah putra pratama */
 #article p {
   text-align: justify;
 }
@@ -116,7 +116,7 @@
   margin: auto;
   text-align: center;
 }
-
+/* code by muh iriansyah putra pratama */
 table.news {
   border-collapse: collapse;
   border: 1px solid black;
@@ -151,10 +151,11 @@ table.article {
 .paging {
   text-align: center;
 }
-
+/* code by muh iriansyah putra pratama */
 .paging span {
   padding: 5px 10px;
   margin-right: 5px;
   background: #eee;
   border: 1px solid #ccc;
 }
+/* code by muh iriansyah putra pratama */

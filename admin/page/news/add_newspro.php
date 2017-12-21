@@ -1,3 +1,4 @@
+<!-- code by muh iriansyah putra pratama -->
 <h1>Berita Tambah</h1>
 <?php
 
@@ -17,11 +18,11 @@ $cek         = array('png','jpg','jpeg','gif');
 $x           = explode('.',$name_image);
 $extension   = strtolower(end($x));
 $size_image  = $_FILES['image']['size'];
-
+// code by muh iriansyah putra pratama
 
 if (in_array($extension, $cek) === TRUE){
   if ($size_image < 5044070){
-
+// code by muh iriansyah putra pratama
     move_uploaded_file($loc_image,"../img/news/$name_image");
 
     try {
@@ -32,7 +33,7 @@ if (in_array($extension, $cek) === TRUE){
 
 			$insertdata = array(':title_news' => $title , ':content_news' => $content, 'created' => $date,
 						              ':name_image' => $name_image, ':type_image' => $type_image, ':size_image' => $size_image);
-
+// code by muh iriansyah putra pratama
 			$pdo->execute($insertdata);
 
 			echo "<center><img src='../img/icons/ceklist.png' width='60'></center>";
@@ -45,7 +46,7 @@ if (in_array($extension, $cek) === TRUE){
 		   die();
 		}
 
-
+// code by muh iriansyah putra pratama
 
 }else{
 	echo "<center><img src='../img/icons/cancel.png' width='60'></center>";
@@ -59,3 +60,4 @@ if (in_array($extension, $cek) === TRUE){
 }
 
  ?>
+<!-- code by muh iriansyah putra pratama -->

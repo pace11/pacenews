@@ -1,15 +1,15 @@
 <?php
 
 include 'lib/koneksi.php';
-
+// code by muh iriansyah putra pratama
 $hal = isset($_GET['hal']) ? $_GET['hal'] : 1;
 $batas = 3;
 $posisi = ($hal-1) * $batas;
-
+// code by muh iriansyah putra pratama
 $query = $conn->prepare("SELECT * FROM tbl_news ORDER BY created DESC LIMIT $posisi, $batas");
 $query->execute();
 $data = $query->fetchAll();
-
+// code by muh iriansyah putra pratama
 foreach ($data as $value) {
 
   $isi = substr($value['content_news'],0,500);
@@ -43,7 +43,7 @@ foreach ($data as $value) {
     $jmlhal = ceil($jmldata/$batas);
     $sebelum = $hal - 1;
     $berikut = $hal + 1;
-
+// code by muh iriansyah putra pratama
     echo "<div class='paging'>";
 
     if ($hal > 1){
@@ -53,7 +53,7 @@ foreach ($data as $value) {
       echo "<span><<</span>";
       echo "<span>Sebelumnya</span>";
     }
-
+// code by muh iriansyah putra pratama
     if ($hal < $jmlhal){
       echo "<span><a href='?page=home&hal=$berikut'>Selanjutnya</a></span>";
       echo "<span><a href='?page=home&hal=$jmlhal'>>></a></span>";
@@ -61,6 +61,6 @@ foreach ($data as $value) {
       echo "<span>Selanjutnya</span>";
       echo "<span>>></span>";
     }
-
+// code by muh iriansyah putra pratama
     echo "</div>";
  ?>

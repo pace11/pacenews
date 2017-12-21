@@ -7,12 +7,12 @@ $id = $_GET['id'];
 $hits = $conn->prepare("UPDATE tbl_news SET hits=hits+1 WHERE id_news = :id");
 $hits->bindparam(':id', $id);
 $hits->execute();
-
+// code by muh iriansyah putra pratama
 $query = $conn->prepare("SELECT * FROM tbl_news WHERE id_news = :id");
 $query->bindparam(':id', $id);
 $query->execute();
 $row=$query->fetch(PDO::FETCH_OBJ);
-
+// code by muh iriansyah putra pratama
   ?>
 
   <div class="isian">
@@ -35,9 +35,9 @@ $row=$query->fetch(PDO::FETCH_OBJ);
     $comment->execute();
     $data = $comment->fetchAll();
     $count = $comment->rowCount();
-
+// code by muh iriansyah putra pratama
     echo "<h3>$count Komentar</h3>";
-
+// code by muh iriansyah putra pratama
     foreach ($data as $value) { ?>
 
     <div class="isian">
@@ -51,7 +51,7 @@ $row=$query->fetch(PDO::FETCH_OBJ);
 
   <form class="formkomentar" action="?page=comm_pro" method="post">
     <input type="hidden" name="id" value="<?php echo $row->id_news; ?>">
-
+<!-- code by muh iriansyah putra pratama -->
     <table>
       <tr>
         <td width="25%">Nama</td>
@@ -75,3 +75,4 @@ $row=$query->fetch(PDO::FETCH_OBJ);
       </tr>
     </table>
   </form>
+<!-- code by muh iriansyah putra pratama -->

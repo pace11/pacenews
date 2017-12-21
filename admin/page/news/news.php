@@ -1,10 +1,11 @@
+<!-- code by muh iriansyah putra pratama -->
 <?php
     include '../lib/koneksi.php';
 
     $hal = isset($_GET['hal']) ? $_GET['hal'] : 1;
     $batas = 3;
     $posisi = ($hal-1) * $batas;
-
+// code by muh iriansyah putra pratama
     $query = $conn->prepare("SELECT * FROM tbl_news LIMIT $posisi, $batas");
     $query->execute();
     $data = $query->fetchAll();
@@ -56,7 +57,7 @@
   $jmlhal = ceil($jmldata/$batas);
   $sebelum = $hal - 1;
   $berikut = $hal + 1;
-
+// code by muh iriansyah putra pratama
   echo "<div class='paging'>";
 
   if ($hal > 1){
@@ -77,3 +78,4 @@
 
   echo "</div>";
 ?>
+<!-- code by muh iriansyah putra pratama -->

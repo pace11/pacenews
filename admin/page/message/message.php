@@ -1,3 +1,4 @@
+<!-- code by muh iriansyah putra pratama -->
 <?php
     include '../lib/koneksi.php';
 
@@ -10,7 +11,7 @@
     $data = $query->fetchAll();
     $count = $query->rowCount();
 ?>
-
+<!-- code by muh iriansyah putra pratama -->
 <h1>Pesan & Komentar</h1>
 <table class="news">
   <tr>
@@ -35,6 +36,7 @@
   endforeach;
    ?>
 </table>
+<!-- code by muh iriansyah putra pratama -->
 <br>
 <?php
 
@@ -69,3 +71,4 @@
 
   echo "</div>";
 ?>
+<!-- code by muh iriansyah putra pratama -->

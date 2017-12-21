@@ -1,5 +1,5 @@
 <?php
-
+// code by muh iriansyah putra pratama
   if (isset($_GET['page'])) $page=$_GET['page'];
   else $page="dashboard";
 
@@ -13,7 +13,7 @@
   elseif ($page == "delete_news") include("page/news/delete_news.php");
 
   elseif ($page == "message") include("page/message/message.php");
-
+// code by muh iriansyah putra pratama
 else echo"Konten tidak ada";
 
 ?>

@@ -1,3 +1,4 @@
+<!-- code by muh iriansyah putra pratama -->
 <?php
   include "../lib/koneksi.php";
 
@@ -9,7 +10,7 @@
  ?>
 
 <h1>Berita Ubah</h1>
-
+<!-- code by muh iriansyah putra pratama -->
 <form name="edit" method="post" action="?page=edit_newspro" enctype="multipart/form-data">
 
   <table class="article">
@@ -20,7 +21,7 @@
         <input type="text" name="title" size="50" value="<?php echo $row->title_news ?>" required>
       </td>
     </tr>
-
+<!-- code by muh iriansyah putra pratama -->
     <tr>
       <td>Gambar</td>
       <td>
@@ -28,14 +29,14 @@
         <input type="file" name="image">
       </td>
     </tr>
-
+<!-- code by muh iriansyah putra pratama -->
     <tr>
       <td>Isi Berita</td>
       <td>
         <textarea name="content" rows="8" cols="80" required><?php echo $row->content_news ?></textarea>
       </td>
     </tr>
-
+<!-- code by muh iriansyah putra pratama -->
     <tr>
       <td></td>
       <td>
@@ -44,5 +45,6 @@
       </td>
     </tr>
   </table>
-
+<!-- code by muh iriansyah putra pratama -->
 </form>
+<!-- code by muh iriansyah putra pratama -->

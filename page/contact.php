@@ -1,7 +1,7 @@
 <h2>Kontak Kami</h2>
-
+<!-- code by muh iriansyah putra pratama -->
 <form class="formkomentar" action="?page=contact_pro" method="post">
-
+<!-- code by muh iriansyah putra pratama -->
   <table>
     <tr>
       <td width="25%">Nama</td>
@@ -24,5 +24,6 @@
       </td>
     </tr>
   </table>
-
+<!-- code by muh iriansyah putra pratama -->
 </form>
+<!-- code by muh iriansyah putra pratama -->

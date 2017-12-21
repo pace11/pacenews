@@ -1,8 +1,9 @@
 <h1>News Edit</h1>
+<!-- code by muh iriansyah putra pratama -->
 <?php
 
 include '../lib/koneksi.php';
-
+// code by muh iriansyah putra pratama
 $id = $_POST['id_news'];
 $title = $_POST['title'];
 $content = $_POST['content'];
@@ -10,7 +11,7 @@ $content = $_POST['content'];
 $name_image = $_FILES['image']['name'];
 $loc_image = $_FILES['image']['tmp_name'];
 $type_image = $_FILES['image']['type'];
-
+// code by muh iriansyah putra pratama
 $date = date('Ymd');
 $isi = addslashes($_POST['content']);
 
@@ -23,8 +24,7 @@ if ($loc_image != ""){
 
       if (in_array($extension, $cek) === TRUE){
         if ($size_image < 5044070){
-
-
+// code by muh iriansyah putra pratama
           $query = $conn->prepare("SELECT * FROM tbl_news WHERE id_news =:id ");
           $query->bindparam(':id', $id);
           $query->execute();
@@ -34,7 +34,7 @@ if ($loc_image != ""){
             unlink("../img/news/$row->name_image");
 
             move_uploaded_file($loc_image,"../img/news/$name_image");
-
+// code by muh iriansyah putra pratama
           try {
       			$conn ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -49,7 +49,7 @@ if ($loc_image != ""){
 
       			$updatedata = array(':title_news' => $title , ':content_news' => $content, 'created' => $date, ':name_image' => $name_image,
       						              ':type_image' => $type_image, ':size_image' => $size_image, ':id_news' => $id);
-
+// code by muh iriansyah putra pratama
       			$pdo->execute($updatedata);
 
 						echo "<center><img src='../img/icons/ceklist.png' width='60'></center>";
@@ -72,7 +72,7 @@ if ($loc_image != ""){
 				echo "<center><a href='?page=news'>back</a></center>";
 			}
 		}else{
-
+// code by muh iriansyah putra pratama
 			try {
 				$conn ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				$pdo = $conn->prepare('UPDATE tbl_news SET
@@ -94,7 +94,8 @@ if ($loc_image != ""){
 				print "Insert data gagal: " . $e->getMessage() . "<br/>";
 				 die();
 			}
-
+// code by muh iriansyah putra pratama
 		}
 
  ?>
+<!-- code by muh iriansyah putra pratama -->
