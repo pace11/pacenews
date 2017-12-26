@@ -9,6 +9,7 @@
   elseif ($page == "contact") include("page/contact.php");
   elseif ($page == "contact_pro") include("page/contact_pro.php");
   elseif ($page == "comm_pro") include("page/comm_pro.php");
+  elseif ($page == "about") include("page/about.php");
 
 // code by muh iriansyah putra pratama
 else echo"Konten tidak ada";

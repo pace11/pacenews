@@ -15,6 +15,7 @@
 		<div class="menu-kiri">
 			<a class="link" href="?page=home">Beranda</a>
 			<a class="link" href="?page=contact">Kontak</a>
+			<a class="link" href="?page=about">Tentang</a>
 		</div>
 <!-- code by muh iriansyah putra pratama -->
 		<div class="menu-kanan">
